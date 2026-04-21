@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WKWebView Test</title>
+    <script>
+        function startExam() {
+            window.webkit.messageHandlers.iosListener.postMessage({
+                action: "startExam"
+            });
+        }
+
+        function submitExam() {
+            window.webkit.messageHandlers.iosListener.postMessage({
+                action: "submitExam"
+            });
+        }
+
+        function openCamera() {
+            window.webkit.messageHandlers.iosListener.postMessage({
+                action: "openCamera"
+            });
+        }
+
+        function openCustomURL() {
+            window.location.href = "myapp://open?screen=dashboard";
+        }
+    </script>
+</head>
+<body>
+    <h1>WKWebView Bridge</h1>
+
+    <button onclick="startExam()">Start Exam</button><br><br>
+    <button onclick="submitExam()">Submit Exam</button><br><br>
+    <button onclick="openCamera()">Open Camera</button><br><br>
+    <button onclick="openCustomURL()">Custom URL</button>
+</body>
+</html>

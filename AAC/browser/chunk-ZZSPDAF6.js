@@ -1,0 +1,1 @@
+import{la as a}from"./chunk-AJJINWA5.js";var s=(()=>{class t{transform(e){return e||"/assets/default-avatar.svg"}static{this.\u0275fac=function(r){return new(r||t)}}static{this.\u0275pipe=a({name:"defaultImage",type:t,pure:!0})}}return t})();export{s as a};
